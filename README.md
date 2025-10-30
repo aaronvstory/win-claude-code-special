@@ -1,6 +1,10 @@
-# Claude Code For Windows
+# Claude Code For Windows (Enhanced Setup Edition)
 
 > **No WSL. No Docker. Just Windows.**
+>
+> 🎯 **This fork includes automated setup scripts and enhanced documentation for easier deployment!**
+>
+> 👉 **Quick Start:** See `START_HERE.md` or run `.\QUICK_SETUP.ps1`
 
 ## 🌍 Languages / 언어 / 语言 / 言語 / Языки
 
