@@ -19,18 +19,46 @@ Claude Code meets Windows. No more "WSL required" errors, just pure productivity
 
 ## 🚀 Quick Start
 
+### Using This Fork (Recommended - with automated setup)
+
+```bash
+# Clone this repo
+git clone https://github.com/aaronvstory/win-claude-code-special.git
+cd win-claude-code-special
+
+# Run automated setup
+.\QUICK_SETUP.ps1
+```
+
+**That's it!** 🎉 The script will:
+- Install Claude Code globally
+- Install win-claude-code from npm
+- Set up PowerShell alias
+- Test your installation
+
+### Using Original npm Package (Manual)
+
 ```bash
 # Install Claude Code globally
 npm install -g @anthropic-ai/claude-code --ignore-scripts
 
+# Install win-claude-code
+npm install -g win-claude-code@latest
+
 # Run it
-npx win-claude-code@latest
+win-claude-code
 ```
 
-**That's it.** 🎉
+> **What's the difference?** This fork provides automated setup scripts and better documentation. The core `win-claude-code` package is the same official npm version, but our scripts make installation easier.
 
-## ✨ What This Does
+## ✨ What This Fork Adds
 
+**Enhanced Setup Features:**
+- 🚀 **Automated Installation** - `QUICK_SETUP.ps1` handles everything
+- 📚 **Better Documentation** - Comprehensive guides and troubleshooting
+- 🎯 **Ready to Share** - Easy for friends/team to deploy
+
+**Core Features (from win-claude-code):**
 - **Bypasses bash dependency checks** - No more terminal detection fails
 - **Zero configuration** - Works out of the box
 - **Same Claude experience** - All features intact
