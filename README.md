@@ -1,104 +1,49 @@
-# Claude Code For Windows (Enhanced Setup Edition)
+# win-claude-code-special
 
-> **No WSL. No Docker. Just Windows.**
->
-> 🎯 **This fork includes automated setup scripts and enhanced documentation for easier deployment!**
->
-> 👉 **Quick Start:** See `START_HERE.md` or run `.\QUICK_SETUP.ps1`
+**One-command setup for Claude Code on Windows. No WSL needed.**
 
-## 🌍 Languages / 언어 / 语言 / 言語 / Языки
-
-[English](README.md) | [한국어](docs/languages/README.ko.md) | [中文](docs/languages/README.zh.md) | [日本語](docs/languages/README.ja.md) | [Русский](docs/languages/README.ru.md) | [Español](docs/languages/README.es.md) | [Français](docs/languages/README.fr.md) | [Deutsch](docs/languages/README.de.md)
-
-[![npm version](https://img.shields.io/npm/v/win-claude-code.svg)](https://npmjs.com/package/win-claude-code)
-[![npm downloads](https://img.shields.io/npm/dm/win-claude-code.svg)](https://npmjs.com/package/win-claude-code)
-
-Claude Code meets Windows. No more "WSL required" errors, just pure productivity.
-
-![a.png](./images/a.png)
-
-## 🚀 Quick Start
-
-### Using This Fork (Recommended - with automated setup)
+## 🚀 Setup (3 Steps)
 
 ```bash
-# Clone this repo
+# 1. Clone
 git clone https://github.com/aaronvstory/win-claude-code-special.git
 cd win-claude-code-special
 
-# Run automated setup
+# 2. Run setup
 .\QUICK_SETUP.ps1
+
+# 3. Restart PowerShell, then type:
+claude
 ```
 
-**That's it!** 🎉 The script will:
-- Install Claude Code globally
-- Install win-claude-code from npm
-- Set up PowerShell alias
-- Test your installation
+Done! 🎉
 
-### Using Original npm Package (Manual)
+## 💡 What It Does
 
-```bash
-# Install Claude Code globally
-npm install -g @anthropic-ai/claude-code --ignore-scripts
-
-# Install win-claude-code
-npm install -g win-claude-code@latest
-
-# Run it
-win-claude-code
-```
-
-> **What's the difference?** This fork provides automated setup scripts and better documentation. The core `win-claude-code` package is the same official npm version, but our scripts make installation easier.
-
-## ✨ What This Fork Adds
-
-**Enhanced Setup Features:**
-- 🚀 **Automated Installation** - `QUICK_SETUP.ps1` handles everything
-- 📚 **Better Documentation** - Comprehensive guides and troubleshooting
-- 🎯 **Ready to Share** - Easy for friends/team to deploy
-
-**Core Features (from win-claude-code):**
-- **Bypasses bash dependency checks** - No more terminal detection fails
-- **Zero configuration** - Works out of the box
-- **Same Claude experience** - All features intact
-- **Unix commands support** - Automatically enables `grep`, `find`, `awk`, `sed` and more with Git Bash
-
-## 🛠️ Unix Commands (Optional)
-
-Want to use Unix commands? Install **Git for Windows** and win-claude-code will automatically detect it:
-
-1. Download from [git-scm.com/download/win](https://git-scm.com/download/win)
-2. Install with default options
-3. Run `npx win-claude-code` - Unix tools are automatically available!
-
-Available commands: `grep`, `find`, `awk`, `sed`, `curl`, `wget`, `tar`, `ssh`, and more.
+- Installs Claude Code + win-claude-code wrapper
+- Sets up `claude` alias in PowerShell
+- Enables Windows path conversion (`/mnt/c/` → `C:\`)
+- Auto-detects Git Bash for Unix commands
+- Fixes VS Code/Cursor IDE compatibility
 
 ## 📋 Requirements
 
-- **Node.js** 22+
-- **Windows** 10/11
-- **Claude Code** (installed globally)
-- **Git for Windows** (optional - for Unix commands)
+- Windows 10/11
+- Node.js 22+
+- Git for Windows (optional - for grep, find, awk, sed)
 
-## 🐛 Common Issues
+## 🐛 Troubleshooting
 
-```bash
-# Claude Code not installed globally
-"Claude Code package is not installed globally"
-→ Run: npm install -g @anthropic-ai/claude-code --ignore-scripts
+**"Node.js not found"** → Install from https://nodejs.org
 
-# Unix commands not working
-"grep is not recognized as an internal or external command"
-→ Install Git for Windows: https://git-scm.com/download/win
-```
+**"Git Bash not found" warning** → Optional. Install from https://git-scm.com/download/win
 
-Found bugs? [Report here](https://github.com/somersby10ml/win-claude-code/issues)
+**Alias doesn't work** → Restart PowerShell completely
 
-## 📜 License
+## 🙏 Credits
+
+Fork of [somersby10ml/win-claude-code](https://github.com/somersby10ml/win-claude-code) with automated setup scripts.
+
+## 📄 License
 
 MIT
-
----
-
-**Made for developers who refuse to use WSL** 😎
