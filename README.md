@@ -32,6 +32,12 @@ Done! 🎉
 - Node.js 22+
 - Git for Windows (optional - for grep, find, awk, sed)
 
+## 🎁 Optional Extras
+
+**Right-Click Launchers** - Launch Claude from any folder via Windows Explorer right-click menu!
+
+See `extras/right-click-launchers/` for setup instructions.
+
 ## 🐛 Troubleshooting
 
 **"Node.js not found"** → Install from https://nodejs.org
